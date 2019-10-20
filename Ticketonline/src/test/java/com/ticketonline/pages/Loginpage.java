@@ -18,7 +18,7 @@ public class Loginpage {
 	}
 	
 	@FindBy(name = "UserName" ) WebElement uname;
-	@FindBy(name = "Password54" ) WebElement pass;
+	@FindBy(name = "Password" ) WebElement pass;
 	@FindBy(className = "prelogin_box1_login_button") WebElement login;
 	
 	//push comment
