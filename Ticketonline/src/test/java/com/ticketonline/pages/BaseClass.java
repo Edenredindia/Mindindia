@@ -55,7 +55,7 @@ public class BaseClass {
 	@AfterClass
 	public void teardown()
 	{
-		BrowserSetup.quitbrowser(driver);
+		//BrowserSetup.quitbrowser(driver);
 	}
 	
 	

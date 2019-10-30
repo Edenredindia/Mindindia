@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
       <![CDATA[setting up report & test getting started]]>
@@ -14,12 +14,12 @@
       <![CDATA[browser started]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="82414" started-at="2019-10-20T11:18:02Z" finished-at="2019-10-20T11:19:24Z">
+  <suite name="Default suite" duration-ms="108900" started-at="2019-10-30T19:08:18Z" finished-at="2019-10-30T19:10:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="82414" started-at="2019-10-20T11:18:02Z" finished-at="2019-10-20T11:19:24Z">
-      <class name="com.ticketonline.testcases.LogintoTOL">
-        <test-method status="PASS" signature="setupSuit()[pri:0, instance:com.ticketonline.testcases.LogintoTOL@3f197a46]" name="setupSuit" is-config="true" duration-ms="684" started-at="2019-10-20T11:18:01Z" finished-at="2019-10-20T11:18:02Z">
+    <test name="Default test" duration-ms="108900" started-at="2019-10-30T19:08:18Z" finished-at="2019-10-30T19:10:07Z">
+      <class name="com.ticketonline.testcases.Orderhistorysearch">
+        <test-method status="PASS" signature="setupSuit()[pri:0, instance:com.ticketonline.testcases.Orderhistorysearch@604ed9f0]" name="setupSuit" is-config="true" duration-ms="7037" started-at="2019-10-30T19:08:11Z" finished-at="2019-10-30T19:08:18Z">
           <reporter-output>
             <line>
               <![CDATA[setting up report & test getting started]]>
@@ -29,7 +29,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setupSuit -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.ticketonline.testcases.LogintoTOL@3f197a46]" name="setup" is-config="true" duration-ms="6175" started-at="2019-10-20T11:18:02Z" finished-at="2019-10-20T11:18:08Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.ticketonline.testcases.Orderhistorysearch@604ed9f0]" name="setup" is-config="true" duration-ms="27580" started-at="2019-10-30T19:08:18Z" finished-at="2019-10-30T19:08:45Z">
           <reporter-output>
             <line>
               <![CDATA[browser getting started]]>
@@ -39,41 +39,26 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginapp()[pri:1, instance:com.ticketonline.testcases.LogintoTOL@3f197a46]" name="loginapp" duration-ms="63216" started-at="2019-10-20T11:18:08Z" finished-at="2019-10-20T11:19:11Z">
+        <test-method status="PASS" signature="Orderhistorysearchtest()[pri:1, instance:com.ticketonline.testcases.Orderhistorysearch@604ed9f0]" name="Orderhistorysearchtest" duration-ms="78714" started-at="2019-10-30T19:08:45Z" finished-at="2019-10-30T19:10:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginapp -->
-        <test-method status="PASS" signature="teardownmethod(org.testng.ITestResult)[pri:0, instance:com.ticketonline.testcases.LogintoTOL@3f197a46]" name="teardownmethod" is-config="true" duration-ms="1003" started-at="2019-10-20T11:19:11Z" finished-at="2019-10-20T11:19:12Z">
+        </test-method> <!-- Orderhistorysearchtest -->
+        <test-method status="PASS" signature="teardownmethod(org.testng.ITestResult)[pri:0, instance:com.ticketonline.testcases.Orderhistorysearch@604ed9f0]" name="teardownmethod" is-config="true" duration-ms="2565" started-at="2019-10-30T19:10:04Z" finished-at="2019-10-30T19:10:07Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginapp status=SUCCESS method=LogintoTOL.loginapp()[pri:1, instance:com.ticketonline.testcases.LogintoTOL@3f197a46] output={null}]]]>
+                <![CDATA[[TestResult name=Orderhistorysearchtest status=SUCCESS method=Orderhistorysearch.Orderhistorysearchtest()[pri:1, instance:com.ticketonline.testcases.Orderhistorysearch@604ed9f0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownmethod -->
-        <test-method status="PASS" signature="logout()[pri:2, instance:com.ticketonline.testcases.LogintoTOL@3f197a46]" name="logout" duration-ms="10660" started-at="2019-10-20T11:19:12Z" finished-at="2019-10-20T11:19:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method status="PASS" signature="teardownmethod(org.testng.ITestResult)[pri:0, instance:com.ticketonline.testcases.LogintoTOL@3f197a46]" name="teardownmethod" is-config="true" duration-ms="702" started-at="2019-10-20T11:19:23Z" finished-at="2019-10-20T11:19:24Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=logout status=SUCCESS method=LogintoTOL.logout()[pri:2, instance:com.ticketonline.testcases.LogintoTOL@3f197a46] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownmethod -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.ticketonline.testcases.LogintoTOL@3f197a46]" name="teardown" is-config="true" duration-ms="615" started-at="2019-10-20T11:19:24Z" finished-at="2019-10-20T11:19:24Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.ticketonline.testcases.Orderhistorysearch@604ed9f0]" name="teardown" is-config="true" duration-ms="0" started-at="2019-10-30T19:10:07Z" finished-at="2019-10-30T19:10:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.ticketonline.testcases.LogintoTOL -->
+      </class> <!-- com.ticketonline.testcases.Orderhistorysearch -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
