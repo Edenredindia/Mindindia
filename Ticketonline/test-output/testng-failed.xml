@@ -3,16 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ticketonline.testcases.LogintoTOL">
+      <class name="com.ticketonline.testcases.Orderhistorysearch">
         <methods>
-          <include name="teardown"/>
-          <include name="loginapp"/>
-          <include name="logout"/>
+          <include name="Orderhistorysearchtest"/>
           <include name="setupSuit"/>
           <include name="teardownmethod"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.ticketonline.testcases.LogintoTOL -->
+      </class> <!-- com.ticketonline.testcases.Orderhistorysearch -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
