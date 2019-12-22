@@ -24,7 +24,7 @@ public class LogintoTOL extends BaseClass{
               //System.out.println(driver.getTitle());
 	//-----
 	
-	logger = report.createTest("login to CRM");
+	logger = report.createTest("login tol application ");
               Loginpage loginpage = PageFactory.initElements(driver, Loginpage.class);
               logger.info("Start application");
               loginpage.logintoTOL(excel.getstringdata("Login", 0, 0),excel.getstringdata("Login", 0, 1));

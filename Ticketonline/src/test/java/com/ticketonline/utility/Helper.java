@@ -36,6 +36,46 @@ public class Helper {
 		return cutomedate.format(currentDate);
 	}
 	
+	public static String getdefaultdirectorylocation(){
+		
+		 String homedir = System.getProperty("user.home");
+	        
+	        
+	        
+	        //homedir vaiable used for getting download location
+	        String downloadPath = homedir+"\\Downloads";
+	        System.out.println(downloadPath);
+	        return homedir;
+	        
+	    
+	}
+	
+	
+	public static File getLatestFilefromDir(String dirPath){
+    File dir = new File(dirPath);
+    File[] files = dir.listFiles();
+    if (files == null || files.length == 0) {
+        return null;
+    }
+
+    File lastModifiedFile = files[0];
+    for (int i = 1; i < files.length; i++) {
+       if (lastModifiedFile.lastModified() < files[i].lastModified()) {
+           lastModifiedFile = files[i];
+       }
+    }
+    return lastModifiedFile;
+    } 
+
+    
+	
+	public static String getlatestfilename()
+    {
+	File getLatestFile = getLatestFilefromDir(getdefaultdirectorylocation());
+    String fileName = getLatestFile.getName();
+	return fileName;
+    
+	}
 	
 	
 	

@@ -5,6 +5,7 @@
     <classes>
       <class name="com.ticketonline.testcases.Orderhistorysearch">
         <methods>
+          <include name="teardown"/>
           <include name="Orderhistorysearchtest"/>
           <include name="setupSuit"/>
           <include name="teardownmethod"/>
