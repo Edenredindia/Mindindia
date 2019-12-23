@@ -43,9 +43,9 @@ public class Helper {
 	        
 	        
 	        //homedir vaiable used for getting download location
-	        String downloadPath = homedir+"\\Downloads";
+	        String downloadPath = homedir+"\\Downloads\\";
 	        System.out.println(downloadPath);
-	        return homedir;
+	        return downloadPath;
 	        
 	    
 	}

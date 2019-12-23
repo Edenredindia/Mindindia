@@ -60,15 +60,29 @@ public class Cardorderhistorypage extends BaseClass{
 		Thread.sleep(10000);
 		
 		Actions act  = new Actions (driver);
+		
   		act.moveToElement(driver.findElement(By.xpath("/html/body/div[3]/div[4]/table/tbody/tr[1]/td/div/table[2]/tbody/tr[2]/td[1]/a"))).click().build().perform();
   		
 			
   		 
   		proformainvoice.click();
-  		Thread.sleep(10000);
+  		Thread.sleep(5000);
   		Orderhistory.click();
-  		Thread.sleep(10000);
-  		driver.get(Helper.getdefaultdirectorylocation()+"\\Downloads\\"+Helper.getlatestfilename());
+  		Thread.sleep(5000);
+  		driver.get(Helper.getdefaultdirectorylocation()+""+Helper.getlatestfilename());
+  		
+  		
+  		
+  		String Currentlink=driver.getCurrentUrl();
+		URL url = new URL(Currentlink);
+		InputStream is=url.openStream();
+		BufferedInputStream fileParse=new BufferedInputStream(is);
+		PDDocument document=null;
+		document=PDDocument.load(fileParse);
+		String pdfContent= new PDFTextStripper().getText(document);
+		System.out.println(pdfContent);
+
+  		
   		
   		
   		
