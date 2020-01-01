@@ -16,6 +16,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 import com.ticketonline.utility.Helper;
 
@@ -41,7 +42,8 @@ public class Cardorderhistorypage extends BaseClass{
 	//@FindBy(xpath = "//a[@title='Click to view order details'][@xpath='1']") WebElement Ordernoselection ;
 	@FindBy(xpath = "//a[contains(@href, '/Order/OrderDetail/')][@xpath='1']") WebElement Ordernoselection ;
 	@FindBy(xpath = "//a[contains(text(),'View Proforma(Normal Invoice)')][@class='heading-logout-text1 left margin-bottom']") WebElement proformainvoice;
-	//@FindBy(xpath = "//a[contains(text(),'View Proforma(Normal Invoice)')]") WebElement proformainvoice;
+	@FindBy(xpath = "/html/body/div[3]/div[4]/table/tbody/tr[1]/td/div/table[2]/tbody/tr[2]/td[1]/a") WebElement Orderno;
+	
 	
 	//a[contains(@href, '/Order/OrderDetail/')][@xpath='1']
 	//input[@name='Reset']
@@ -53,15 +55,20 @@ public class Cardorderhistorypage extends BaseClass{
 		
 		Orderhistory.click();
 		Searchplusbutton.click();
-		Select dropdownmonth = new Select (driver.findElement(By.xpath("//select[@class='prelogin_box1_field12'][@id='Month']")));
+		Select dropdownmonth = new Select (SelectMonth);
 		dropdownmonth.selectByIndex(1);
 		Search.click();
 		
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		
+		String Ordernodetails = Orderno.getText();
+		System.out.println();
 		Actions act  = new Actions (driver);
 		
-  		act.moveToElement(driver.findElement(By.xpath("/html/body/div[3]/div[4]/table/tbody/tr[1]/td/div/table[2]/tbody/tr[2]/td[1]/a"))).click().build().perform();
+  		act.moveToElement(Orderno).click().build().perform();
+  		
+  		
+  		
   		
 			
   		 
@@ -83,8 +90,8 @@ public class Cardorderhistorypage extends BaseClass{
 		System.out.println(pdfContent);
 
   		
-  		
-  		
+  		Assert.assertTrue(pdfContent.contains(Ordernodetails));
+  		Assert.assertTrue(pdfContent.contains("Edenred (India) Pvt. Ltd."));
   		
   		
   		

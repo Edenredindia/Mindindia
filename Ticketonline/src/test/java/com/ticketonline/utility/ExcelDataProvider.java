@@ -37,4 +37,16 @@ public class ExcelDataProvider {
 		return	wb.getSheet("Login").getRow(row).getCell(column).getNumericCellValue();
 			
 		}
+	
+	//public String writedata(int sheetindex, int row,int column ){
+		
+		//wb.getSheetAt(sheetindex).getRow(row).getCell(column);
+		
+		//return null;
+		
+	//}
+	
+	
+	
+	
 }
